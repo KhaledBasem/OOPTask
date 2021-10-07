@@ -1,0 +1,124 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Situation</title>
+
+    <link href="~/css/Style/StyleSheet.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form method="post" action="Index1">
+        <div class="box">
+
+            <div class="title1">
+                <h2>Social Security Situation مؤسسة الضمان الاجتماعي</h2>
+            </div>
+            <div class="txt">
+
+                <div>
+                    <span>First Name</span>
+                </div>
+                <div>
+                    <input type="text" name="textFirst" class="textBox" />
+                </div>
+            </div>
+
+            <div class="txt">
+
+                <div>
+                    <span>Last Name</span>
+                </div>
+                <div>
+                    <input type="text" name="taxtLast" class="textBox" />
+                </div>
+            </div>
+
+            <div style="clear:left" class="txt">
+                <div style="float:left">
+                    You Are
+                </div>
+                <div style="float:left" class="sel">
+                    <select id="type" name="Are You">
+                        <option value="Teacher">Teacher</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Engineer">Engineer</option>
+
+                    </select>
+                </div>
+
+                <div class="gender">
+                    <div style="float:left">
+                        Gender
+                    </div>
+                    <div style="float:left">
+                        <input type="radio" name="gender" value="MR"> Male
+                        <input type="radio" name="gender" value="MS"> Female
+                    </div>
+                </div>
+
+                <br />
+                <br />
+                <br />
+
+
+                <div style="clear:left">
+
+                    <div>
+                        <span>Your Salary</span>
+                    </div>
+                    <div>
+                        <input type="text" class="textBox" name="Salary" />
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="txt">
+
+                <div style="clear:left">
+                    <span>Do You Have Any Deduction:</span>
+                </div>
+                <div>
+                    <input type="text" class="textBox" name="Deduction" />
+                </div>
+            </div>
+            <div class="txt">
+
+                <div>
+                    <span>Do You Have Any Insentive:</span>
+                </div>
+                <div>
+                    <input type="text" class="textBox" name="Insentive" />
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Save" class="submit" />
+            </div>
+
+            <br />
+
+            <div>
+                <span>@ViewData["Message"]</span>
+            </div>
+
+        </div>
+        
+
+    </form>
+    
+</body>
+</html>

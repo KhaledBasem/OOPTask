@@ -1,0 +1,162 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Info</title>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $("#type").change(function () {
+                if ($(this).val()=="Hourly") {
+
+                    $(".hp").show();
+                    $(".hourly").show();
+                    $(".dp").hide()
+                    $(".Full").hide()
+
+                }
+                else {
+                    $(".hp").hide();
+                    $(".dp").show()
+                    $(".hourly").hide();
+                    $(".Full").show()
+                    
+                }
+
+
+
+            })
+
+
+
+
+
+        })
+
+
+
+
+    </script>
+    
+</head>
+<body>  
+    <form action="Index1" method="post">
+
+        <div style="clear:left">
+            <div style="float:left">
+                First Name
+            </div>
+            <div style="float:left">
+                <input type="text" name="textFirst" />
+            </div>
+        </div>
+
+        <div style="clear:left">
+            <div style="float:left">
+                Last Name
+            </div>
+            <div style="float:left">
+                <input type="text" name="textLast" />
+            </div>
+        </div>
+        <br />
+        <div style="clear:left">
+            <div style="float:left">
+                Email
+            </div>
+            <div style="float:left">
+                <input type="text" name="textEmail" />
+            </div>
+        </div>
+        <br />
+
+        <div style="clear:left">
+            <div style="float:left">
+                EmployeeType
+            </div>
+            <div style="float:left">
+                <select id="type" name="typelist">
+                    <option value="Hourly">Hourly</option>
+                    <option value="Full Time">Full Time</option>
+
+                </select>
+            </div>
+            <br />
+
+
+        </div>
+        <div style="clear:left" class="hp">
+            <div style="float:left">
+                Hour Price
+            </div>
+            <div style="float:left">
+                <input type="text" name="texthp" />
+            </div>
+        </div>
+        <br />
+        <div style="clear:left" class="dp">
+            <div style="float:left">
+                Day Price
+            </div>
+            <div style="float:left">
+                <input type="text" name="textdp" />
+            </div>
+        </div>
+        <br />
+
+        <br />
+        <div style="clear:left" class="hourly">
+            <div style="float:left">
+                Hours
+            </div>
+            <div style="float:left">
+                <input type="text" name="textHours" />
+            </div>
+        </div>
+        <div style="clear:left" class="Full">
+            <div style="float:left">
+                Days
+            </div>
+            <div style="float:left">
+                <input type="text" name="textDays" />
+            </div>
+        </div>
+        <div style="clear:left">
+            <div style="float:left">
+                Phone
+            </div>
+            <div style="float:left">
+                <input type="text" name="textPhone" />
+            </div>
+        </div>
+        <div style="clear:left">
+            <div style="float:left">
+                Gender
+            </div>
+            <div style="float:left">
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+        </div>
+        <div style="clear:left">
+            <div style="float:left">
+                <input type="submit" value="sava" />
+            </div>
+        </div>
+        <br/>
+  
+        <div>
+            <span>@ViewData["Message"]</span>
+        </div>
+
+    </form>
+</body>
+</html>

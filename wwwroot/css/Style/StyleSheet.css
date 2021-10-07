@@ -1,0 +1,53 @@
+﻿body {
+    
+    background-image: url('../../Images1/JOR.jpg');
+    margin:0px;
+}
+.title1 {
+    color: white; 
+    margin-left: 23%;
+}
+.box {
+    margin-left: 18%;
+    margin-top: 7%;
+    Width: 69%;
+    height: 82%;
+    Position: absolute;
+    background-color: rgb(0 0 0);
+    box-shadow: 0 15px 25px rgb(0 0 0 / 50%);
+    color: white;
+    opacity: 77%;
+}
+.textBox {
+    Width: 99%;
+    height: 27px;
+    Font-size: 18px;
+    Color: white;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+    outline: 0px;
+    background-color: #000;
+}
+.submit {
+    Background: #03a9f4;
+    border: none;
+    Color: white;
+    Height: 35px;
+    Width: 97.2%;
+    Cursor: pointer;
+    margin-top: 5px;
+    Border-radius: 5px;
+    margin-left: 25px;
+}
+.gender{
+    margin-left:20%;
+}
+.txt {
+    margin-left: 25px;
+}
+.sel{
+    margin-left:10px;
+}
